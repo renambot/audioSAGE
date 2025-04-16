@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>AI Dictaphone</title>
+    <link href="app.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/wavefile"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>AI dictaphone</h1>
+      </header>
+
+      <section class="main-controls">
+        <canvas class="visualizer" width="200px" height="60px"></canvas>
+        <div>
+          <label for="microphoneSelect">Select a Microphone:</label>
+          <select id="microphoneSelect"></select>
+        </div>
+        <div id="buttons">
+          <button class="record">Record</button>
+          <button class="stop">Stop</button>
+        </div>
+      </section>
+
+      <button id="downloadAudio" disabled>Download WAV</button>
+      <section class="sound-clips"></section>
+    </div>
+  </body>
+</html>
